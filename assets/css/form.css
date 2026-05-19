@@ -1,0 +1,146 @@
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact {
+  padding: var(--section-padding) 0;
+  background: var(--cream);
+}
+
+.contact .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-content h2 {
+  margin-bottom: 20px;
+}
+
+.contact-content > p {
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--warm-white);
+  border-radius: 16px;
+  transition: var(--transition-smooth);
+}
+
+.contact-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 30px rgba(42, 37, 34, 0.08);
+}
+
+.contact-item.whatsapp:hover {
+  background: #25d366;
+  color: white;
+}
+
+.contact-item.whatsapp:hover svg {
+  fill: white;
+}
+
+.contact-item.whatsapp:hover strong,
+.contact-item.whatsapp:hover span {
+  color: white;
+}
+
+.contact-item svg {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.contact-item strong {
+  display: block;
+  color: var(--deep-brown);
+  font-size: 0.9rem;
+}
+
+.contact-item span {
+  font-size: 0.95rem;
+  color: var(--taupe);
+}
+
+.contact-form-wrapper {
+  background: var(--warm-white);
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(42, 37, 34, 0.08);
+}
+
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.form-message {
+  margin: auto;
+  text-align: center;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.form-message.success {
+  color: #25d366;
+  background-color: #25d36515;
+}
+
+.form-message.error {
+  color: #a84d32;
+  background-color: #d97b5c18;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1.5px solid var(--sand);
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--charcoal);
+  background: var(--warm-white);
+  transition: var(--transition-smooth);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--primary-alpha-10);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238B7D72' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 20px;
+}
+

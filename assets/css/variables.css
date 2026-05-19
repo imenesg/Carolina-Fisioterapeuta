@@ -1,0 +1,89 @@
+:root {
+  /* PRIMARY — Sage refinado */
+
+  --primary-50: #f3f6f1;
+  --primary-100: #e5ece1;
+  --primary-200: #d3ddcd;
+  --primary-300: #c0ceb9;
+  --primary-400: #a9bfa3;
+  --primary-500: #92ae8d;
+  --primary-600: #7c9778;
+  --primary-700: #667e63;
+  --primary-800: #51664f;
+  --primary-900: #3e4f3d;
+
+  --primary: var(--primary-500);
+  --primary-dark: var(--primary-700);
+  --primary-light: var(--primary-200);
+
+  --primary-alpha-05: rgba(146, 174, 141, 0.05);
+  --primary-alpha-10: rgba(146, 174, 141, 0.1);
+  --primary-alpha-20: rgba(146, 174, 141, 0.2);
+  --primary-alpha-30: rgba(146, 174, 141, 0.3);
+
+  /* azul */
+  --primary-50: #f2f5f6;
+  --primary-100: #e3eaed;
+  --primary-200: #cfdadd;
+  --primary-300: #b8c6cb;
+  --primary-400: #9fb2b8;
+  --primary-500: #6c8691;
+  --primary-600: #5e757f;
+  --primary-700: #4f626a;
+  --primary-800: #404f55;
+  --primary-900: #323d41;
+
+  --primary: var(--primary-500);
+  --primary-dark: var(--primary-700);
+  --primary-light: var(--primary-200);
+
+  --primary-alpha-05: rgba(108, 134, 145, 0.05);
+  --primary-alpha-10: rgba(108, 134, 145, 0.1);
+  --primary-alpha-20: rgba(108, 134, 145, 0.2);
+  --primary-alpha-30: rgba(108, 134, 145, 0.3);
+  /* azul */
+
+  /* NEUTROS */
+
+  --cream: #faf7f4;
+  --cream-dark: #f0e9e3;
+  --warm-white: #fffdfb;
+  --sand: #e6ddd6;
+
+  --taupe: #7a6f66;
+  --charcoal: #3a3430;
+  --deep-brown: #26211e;
+
+  /* SHADOW TOKENS */
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 20px 60px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 30px 80px rgba(0, 0, 0, 0.12);
+
+  /* TYPO */
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --section-padding: clamp(80px, 12vw, 140px);
+  --container-max: 1200px;
+
+  --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  max-width: var(--container-max);
+  margin: auto;
+  padding: 0 clamp(20px, 5vw, 40px);
+}
