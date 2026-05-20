@@ -62,8 +62,8 @@
 
   /* TYPO */
 
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: Georgia, serif;
+  /*--font-body: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;*/
 
   --section-padding: clamp(80px, 12vw, 140px);
   --container-max: 1200px;
