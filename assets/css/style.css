@@ -191,12 +191,27 @@ img {
   text-align: center;
 }
 
-.credential-number {
-  display: block;
+.credential-number, .credential-number p {
+  display: flex;
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary);
+}
+
+.credential-number .dash {
+  margin-top: -2px;
+  margin-bottom: 0;
+}
+
+
+.credential-number .number {
+  margin-top: -3px;
+  margin-bottom: 0;
+}
+
+.credential-number p {
+
 }
 
 .credential-text {
@@ -373,6 +388,9 @@ img {
   border-radius: 20px;
   position: relative;
   transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .testimonial-card:hover {
