@@ -150,12 +150,17 @@ img {
   overflow: hidden;
   box-shadow: var(--shadow-medium);
 }
+
+#sobre .about-image-frame img {
+  object-position: center bottom;
+}
+
 .about-image-frame img {
   width: 100%;
   height: auto;
   aspect-ratio: 4/5;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   display: block;
 }
 
